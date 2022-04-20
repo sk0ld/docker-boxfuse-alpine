@@ -1,4 +1,4 @@
-FROM FROM tomcat:8.5.13-jre8-alpine
+FROM tomcat:8.5.13-jre8-alpine
 RUN apk update
 RUN apk --no-cache add openjdk8 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
 RUN apk add git  && apk add maven
