@@ -5,3 +5,4 @@ RUN apk add git  && apk add maven
 WORKDIR /usr/share/app-src
 RUN git clone https://github.com/sk0ld/boxfuse-custom.git ./
 RUN mvn package -s settings.xml -DskipTest
+RUN cp ./target/*.war /usr/local/tomcat/webapps
